@@ -14,7 +14,6 @@
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\sim\AppData\Roaming\Subversion</configuration>
   </component>
