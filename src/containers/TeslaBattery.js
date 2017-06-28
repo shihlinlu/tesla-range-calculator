@@ -2,6 +2,7 @@ import React from 'react';
 import './TeslaBattery.css';
 import TeslaNotice from '../components/TeslaNotice/TeslaNotice';
 import TeslaCar from '../components/TeslaCar/TeslaCar';
+import TeslaStats from '../components/TeslaStats/TeslaStats';
 
 class TeslaBattery extends React.Component {
 	// constructor to set the initial values
@@ -27,6 +28,7 @@ class TeslaBattery extends React.Component {
 			<form className="tesla-battery">
 				<h1>Range Per Charge</h1>
 				<TeslaCar wheelsize= {config.wheels} />
+				<TeslaStats carstats={carstats} />
 				<TeslaNotice />
 			</form>
 		)
