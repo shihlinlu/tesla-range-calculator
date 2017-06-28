@@ -13,6 +13,7 @@ const TeslaCar = (props) => (
 
 // specify propTypes to check props passed to the component
 // React.PropTypes has been deprecated. Documentation: https://facebook.github.io/react/blog/2017/04/07/react-v15.5.0.html#migrating-from-react.proptypes
+// https://www.npmjs.com/package/prop-types
 TeslaCar.propTypes = {
 	wheelsize: PropTypes.number
 }
