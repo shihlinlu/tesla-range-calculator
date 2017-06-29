@@ -18,7 +18,7 @@ class TeslaBattery extends React.Component {
 		this.increment = this.increment.bind(this);
 		this.decrement = this.decrement.bind(this);
 		this.updateCounterState = this.updateCounterState.bind(this);
-		this.handleChangeClimate = this.handleChangeClimate(this);
+		this.handleChangeClimate = this.handleChangeClimate.bind(this);
 
 		this.state = {
 			carstats: [],
