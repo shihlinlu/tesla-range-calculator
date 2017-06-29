@@ -1,5 +1,6 @@
 import React from 'react';
 import './TeslaStats.css';
+import PropTypes from 'prop-types';
 
 const TeslaStats = (props) => {
 	const listItems = props.carstats.map((stat) => (
@@ -8,7 +9,6 @@ const TeslaStats = (props) => {
 			<p>{stat.miles}</p>
 		</li>
 	));
-
 	return (
 		<div className="tesla-stats">
 			<ul>
@@ -19,7 +19,7 @@ const TeslaStats = (props) => {
 };
 
 TeslaStats.propTypes = {
-	carstats: React.PropTypes.array
+	carstats: PropTypes.array
 }
 
 export default TeslaStats;

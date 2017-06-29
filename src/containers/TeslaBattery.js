@@ -53,7 +53,7 @@ class TeslaBattery extends React.Component {
 	render() {
 		// ES6 object structuring syntax
 		// takes out required values and creates references to them
-		const { config } = this.state;
+		const { config, carstats } = this.state;
 		return (
 			<form className="tesla-battery">
 				<h1>Range Per Charge</h1>
