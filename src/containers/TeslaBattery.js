@@ -5,6 +5,7 @@ import TeslaCar from '../components/TeslaCar/TeslaCar';
 import TeslaStats from '../components/TeslaStats/TeslaStats';
 import TeslaCounter from '../components/TeslaCounter/TeslaCounter';
 import TeslaClimate from '../components/TeslaClimate/TeslaClimate';
+import TeslaWheels from '../components/TeslaWheels/TeslaWheels';
 import { getModelData } from '../services/BatteryService';
 
 class TeslaBattery extends React.Component {
@@ -19,6 +20,8 @@ class TeslaBattery extends React.Component {
 		this.decrement = this.decrement.bind(this);
 		this.updateCounterState = this.updateCounterState.bind(this);
 		this.handleChangeClimate = this.handleChangeClimate.bind(this);
+		this.handleChangeWheels = this.handleChangeClimate.bind(this);
+		this.statsUpdate = this.statsUpdate.bind(this);
 
 		this.state = {
 			carstats: [],
@@ -112,6 +115,13 @@ class TeslaBattery extends React.Component {
 		this.setState({ config });
 	}
 
+	// handle wheels option event handler
+	handleChangeWheels(size) {
+		const config = {...this.state.config};
+		config['wheels'] = size;
+		this.setState({ config });
+	}
+
 	render() {
 		// ES6 object structuring syntax
 		// takes out required values and creates references to them
@@ -141,6 +151,10 @@ class TeslaBattery extends React.Component {
 							handleChangeClimate={this.handleChangeClimate}
 						/>
 					</div>
+					<TeslaWheels
+						value={this.state.config.wheels}
+						handleChangeWheels={this.handleChangeWheels}
+					/>
 				</div>
 				<TeslaNotice />
 			</form>
