@@ -1,4 +1,6 @@
 # tesla-range-calculator
 Tesla Model S Battery Range Calculator
 
-https://shihlinlu.github.io/tesla-range-calculator/
+This is based on <strong>Part 1 of the Tesla Battery Range Tutorial</strong> <a href="https://medium.freecodecamp.org/building-teslas-battery-range-calculator-with-react-part-1-2cb7abd8c1ee">here.</a> 
+
+Project URL: https://shihlinlu.github.io/tesla-range-calculator/
