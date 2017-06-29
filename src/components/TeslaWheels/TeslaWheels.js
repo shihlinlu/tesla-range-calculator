@@ -34,6 +34,7 @@ const TeslaWheels = (props) => (
 		</div>
 	</div>
 );
+
 TeslaWheels.propTypes = {
 	value: PropTypes.number,
 	handleChangeWheels: PropTypes.func
