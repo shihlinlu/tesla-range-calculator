@@ -4,6 +4,7 @@ import TeslaNotice from '../components/TeslaNotice/TeslaNotice';
 import TeslaCar from '../components/TeslaCar/TeslaCar';
 import TeslaStats from '../components/TeslaStats/TeslaStats';
 import TeslaCounter from '../components/TeslaCounter/TeslaCounter';
+import TeslaClimate from '../components/TeslaClimate/TeslaClimate';
 import { getModelData } from '../services/BatteryService';
 
 class TeslaBattery extends React.Component {
@@ -17,6 +18,7 @@ class TeslaBattery extends React.Component {
 		this.increment = this.increment.bind(this);
 		this.decrement = this.decrement.bind(this);
 		this.updateCounterState = this.updateCounterState.bind(this);
+		this.handleChangeClimate = this.handleChangeClimate(this);
 
 		this.state = {
 			carstats: [],
@@ -103,6 +105,13 @@ class TeslaBattery extends React.Component {
 		}
 	}
 
+	//handle A/C and heating click event handler
+	handleChangeClimate() {
+		const config = {...this.state.config};
+		config['climate'] = !this.state.config.climate;
+		this.setState({ config });
+	}
+
 	render() {
 		// ES6 object structuring syntax
 		// takes out required values and creates references to them
@@ -125,6 +134,11 @@ class TeslaBattery extends React.Component {
 							initValues={this.props.counterDefaultVal.temperature}
 							increment={this.increment}
 							decrement={this.decrement}
+						/>
+						<TeslaClimate
+							value={this.state.config.climate}
+							limit={this.state.config.temperature > 10}
+							handleChangeClimate={this.handleChangeClimate}
 						/>
 					</div>
 				</div>
