@@ -4,18 +4,17 @@
 # dependencies
 node_modules
 
-# testing
-coverage
-
 # production
 build
 
 # misc
-/.idea
+.idea/
+
 .DS_Store
 .env
 npm-debug.log
 registerServiceWorker.js
 packag
 yarn.lock
+README-copy.md
 
