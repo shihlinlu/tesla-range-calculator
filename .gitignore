@@ -16,3 +16,6 @@ build
 .env
 npm-debug.log
 registerServiceWorker.js
+packag
+yarn.lock
+
