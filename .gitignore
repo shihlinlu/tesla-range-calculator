@@ -18,3 +18,4 @@ packag
 yarn.lock
 README-copy.md
 
+/yarn-error.log
