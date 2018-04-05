@@ -25,7 +25,7 @@ const LabelLists = (props) => {
 			{LabelItems}
 		</div>
 	);
-}
+};
 const TeslaWheels = (props) => (
 	<div className="tesla-wheels__component">
 		<p className="tesla-wheels__title">Wheels</p>
@@ -38,5 +38,5 @@ const TeslaWheels = (props) => (
 TeslaWheels.propTypes = {
 	value: PropTypes.number,
 	handleChangeWheels: PropTypes.func
-}
+};
 export default TeslaWheels;

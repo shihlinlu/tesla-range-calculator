@@ -14,8 +14,7 @@ const TeslaCounter = ({ initValues, currentValue, increment, decrement }) => (
 					<button
 						onClick={(e) => {
 						e.preventDefault();
-						increment(currentValue)}
-                        }
+						increment(currentValue)}}
 						disabled={currentValue >= initValues.max}>
 					</button>
 					<button

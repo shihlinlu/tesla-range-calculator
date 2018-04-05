@@ -99,7 +99,7 @@ function appReducer(state = initialState, action) {
                     climate: state.config.climate,
                     speed: state.config.speed,
                     temperature: action.value - action.step,
-                    wheels: action.value,
+                    wheels: state.config.wheels,
                 }
             };
             return updateStats(state, newState);
