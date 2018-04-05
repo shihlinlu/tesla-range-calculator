@@ -30,7 +30,7 @@ class App extends Component {
                         <TeslaStatsContainer />
                         <div className="tesla-controls cf">
                             <TeslaSpeedCounterContainer />
-                            <div className="tesla-cliamte-container cf">
+                            <div className="tesla-climate-container cf">
                                 <TeslaTempCounterContainer />
                                 <TeslaClimateContainer />
                             </div>

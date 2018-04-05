@@ -1,4 +1,4 @@
-import { counterDefaultVal } from '../constants/counterdefaultval';
+import { counterDefaultVal } from '../constants/counterDefaultVal';
 
 export const speedUp = (value) => {
     return {
